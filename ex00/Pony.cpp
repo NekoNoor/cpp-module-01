@@ -6,11 +6,16 @@
 /*   By: nschat <nschat@student.codam.nl>             +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2021/05/13 14:42:57 by nschat        #+#    #+#                 */
-/*   Updated: 2021/05/13 15:27:13 by nschat        ########   odam.nl         */
+/*   Updated: 2021/05/13 17:03:18 by nschat        ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Pony.hpp"
 
-class Pony {
-};
+void ponyOnTheHeap(void)
+{
+}
+
+void ponyOnTheStack(void)
+{
+}

@@ -6,7 +6,7 @@
 /*   By: nschat <nschat@student.codam.nl>             +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2021/05/13 14:42:33 by nschat        #+#    #+#                 */
-/*   Updated: 2021/05/13 14:42:53 by nschat        ########   odam.nl         */
+/*   Updated: 2021/05/13 17:02:07 by nschat        ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,4 +14,5 @@
 
 int main(void)
 {
+	t_Pony new_pony;
 }
