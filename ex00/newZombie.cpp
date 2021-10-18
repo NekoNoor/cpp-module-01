@@ -1,30 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        ::::::::            */
-/*   main.cpp                                           :+:    :+:            */
+/*   newZombie.cpp                                      :+:    :+:            */
 /*                                                     +:+                    */
 /*   By: nschat <nschat@student.codam.nl>             +#+                     */
 /*                                                   +#+                      */
-/*   Created: 2021/10/18 11:58:04 by nschat        #+#    #+#                 */
-/*   Updated: 2021/10/18 15:02:20 by nschat        ########   odam.nl         */
+/*   Created: 2021/10/18 13:32:26 by nschat        #+#    #+#                 */
+/*   Updated: 2021/10/18 13:48:01 by nschat        ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Zombie.hpp"
 
-int	main(void)
+Zombie	*Zombie::newZombie(std::string name)
 {
-	{
-		Zombie bonk = Zombie("bonk");
-		bonk.announce();
-	}
-	{
-		Zombie *bob = Zombie::newZombie("bob");
-		bob->announce();
-		delete bob;
-	}
-	{
-		Zombie::randomChump("greg");
-	}
-	return (0);
+	class Zombie *bozo = new Zombie(name);
+
+	return (bozo);
 }

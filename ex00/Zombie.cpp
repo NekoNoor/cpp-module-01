@@ -1,30 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        ::::::::            */
-/*   main.cpp                                           :+:    :+:            */
+/*   Zombie.cpp                                         :+:    :+:            */
 /*                                                     +:+                    */
 /*   By: nschat <nschat@student.codam.nl>             +#+                     */
 /*                                                   +#+                      */
-/*   Created: 2021/10/18 11:58:04 by nschat        #+#    #+#                 */
-/*   Updated: 2021/10/18 15:02:20 by nschat        ########   odam.nl         */
+/*   Created: 2021/10/18 13:30:21 by nschat        #+#    #+#                 */
+/*   Updated: 2021/10/18 14:55:17 by nschat        ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Zombie.hpp"
 
-int	main(void)
+void	Zombie::announce(void)
 {
-	{
-		Zombie bonk = Zombie("bonk");
-		bonk.announce();
-	}
-	{
-		Zombie *bob = Zombie::newZombie("bob");
-		bob->announce();
-		delete bob;
-	}
-	{
-		Zombie::randomChump("greg");
-	}
-	return (0);
+	std::cout << "<" << this->_name << "> BraiiiiiiinnnzzzZ..." << std::endl;
+}
+
+Zombie::~Zombie(void)
+{
+	std::cout << this->_name << " has died" << std::endl;
+}
+
+Zombie::Zombie(std::string name)
+{
+	this->_name = name;
 }

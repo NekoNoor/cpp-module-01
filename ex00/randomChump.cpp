@@ -1,25 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        ::::::::            */
-/*   Pony.hpp                                           :+:    :+:            */
+/*   randomChump.cpp                                    :+:    :+:            */
 /*                                                     +:+                    */
 /*   By: nschat <nschat@student.codam.nl>             +#+                     */
 /*                                                   +#+                      */
-/*   Created: 2021/05/13 14:42:04 by nschat        #+#    #+#                 */
-/*   Updated: 2021/05/13 17:03:32 by nschat        ########   odam.nl         */
+/*   Created: 2021/10/18 13:38:22 by nschat        #+#    #+#                 */
+/*   Updated: 2021/10/18 13:48:54 by nschat        ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef PONY_HPP
-# define PONY_HPP
+#include "Zombie.hpp"
 
-class Pony {
-	private:
-		int hooves, legs, body, tail, head, ears, eyes, mouth, nose;
+void	Zombie::randomChump(std::string name)
+{
+	Zombie chump = Zombie(name);
 
-	public:
-		void ponyOnTheHeap();
-		void ponyOnTheStack();
-};
-
-#endif
+	chump.announce();
+}

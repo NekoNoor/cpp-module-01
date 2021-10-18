@@ -1,30 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        ::::::::            */
-/*   main.cpp                                           :+:    :+:            */
+/*   Zombie.hpp                                         :+:    :+:            */
 /*                                                     +:+                    */
 /*   By: nschat <nschat@student.codam.nl>             +#+                     */
 /*                                                   +#+                      */
-/*   Created: 2021/10/18 11:58:04 by nschat        #+#    #+#                 */
-/*   Updated: 2021/10/18 15:02:20 by nschat        ########   odam.nl         */
+/*   Created: 2021/10/18 13:11:49 by nschat        #+#    #+#                 */
+/*   Updated: 2021/10/18 14:59:11 by nschat        ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Zombie.hpp"
+#include <iostream>
 
-int	main(void)
+class Zombie
 {
-	{
-		Zombie bonk = Zombie("bonk");
-		bonk.announce();
-	}
-	{
-		Zombie *bob = Zombie::newZombie("bob");
-		bob->announce();
-		delete bob;
-	}
-	{
-		Zombie::randomChump("greg");
-	}
-	return (0);
-}
+	public:
+		Zombie(std::string);
+		~Zombie();
+		void announce(void);
+		static Zombie *newZombie(std::string);
+		static void randomChump(std::string);
+
+	private:
+		std::string _name;
+};
