@@ -1,0 +1,66 @@
+[
+ {
+  "directory": "/Users/nschat/Projects/cpp-modules/cpp-module-01/ex00",
+  "arguments": [
+   "clang++",
+   "-Wall",
+   "-Wextra",
+   "-Werror",
+   "-std=c++98",
+   "-pedantic",
+   "-c",
+   "main.cpp",
+   "-o",
+   "main.o"
+  ],
+  "file": "main.cpp"
+ },
+ {
+  "directory": "/Users/nschat/Projects/cpp-modules/cpp-module-01/ex00",
+  "arguments": [
+   "clang++",
+   "-Wall",
+   "-Wextra",
+   "-Werror",
+   "-std=c++98",
+   "-pedantic",
+   "-c",
+   "Zombie.cpp",
+   "-o",
+   "Zombie.o"
+  ],
+  "file": "Zombie.cpp"
+ },
+ {
+  "directory": "/Users/nschat/Projects/cpp-modules/cpp-module-01/ex00",
+  "arguments": [
+   "clang++",
+   "-Wall",
+   "-Wextra",
+   "-Werror",
+   "-std=c++98",
+   "-pedantic",
+   "-c",
+   "newZombie.cpp",
+   "-o",
+   "newZombie.o"
+  ],
+  "file": "newZombie.cpp"
+ },
+ {
+  "directory": "/Users/nschat/Projects/cpp-modules/cpp-module-01/ex00",
+  "arguments": [
+   "clang++",
+   "-Wall",
+   "-Wextra",
+   "-Werror",
+   "-std=c++98",
+   "-pedantic",
+   "-c",
+   "randomChump.cpp",
+   "-o",
+   "randomChump.o"
+  ],
+  "file": "randomChump.cpp"
+ }
+]
