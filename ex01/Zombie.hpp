@@ -6,7 +6,7 @@
 /*   By: nschat <nschat@student.codam.nl>             +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2021/10/18 13:11:49 by nschat        #+#    #+#                 */
-/*   Updated: 2021/10/19 17:17:35 by nschat        ########   odam.nl         */
+/*   Updated: 2021/10/28 16:28:02 by nschat        ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,11 +15,14 @@
 class Zombie
 {
 	public:
+		Zombie();
 		Zombie(std::string);
 		~Zombie();
 		void announce(void);
-		Zombie *zombieHorde(int, std::string);
+		void setName(std::string);
 
 	private:
 		std::string _name;
 };
+
+Zombie *zombieHorde(int N, std::string name);
