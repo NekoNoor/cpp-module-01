@@ -6,11 +6,13 @@
 /*   By: nschat <nschat@student.codam.nl>             +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2021/10/18 13:11:49 by nschat        #+#    #+#                 */
-/*   Updated: 2021/10/28 16:33:47 by nschat        ########   odam.nl         */
+/*   Updated: 2021/10/29 13:27:37 by nschat        ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <iostream>
+#ifndef ZOMBIE_HPP
+# define ZOMBIE_HPP
+# include <iostream>
 
 class Zombie
 {
@@ -24,3 +26,5 @@ class Zombie
 	private:
 		std::string _name;
 };
+
+#endif
