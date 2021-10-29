@@ -6,7 +6,7 @@
 /*   By: nschat <nschat@student.codam.nl>             +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2021/10/29 13:17:59 by nschat        #+#    #+#                 */
-/*   Updated: 2021/10/29 13:25:17 by nschat        ########   odam.nl         */
+/*   Updated: 2021/10/29 15:33:13 by nschat        ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,4 +16,17 @@
 
 int	main(void)
 {
+	Weapon knoife("sharp");
+	HumanA snobble("boba", knoife);
+	snobble.attack();
+
+	Weapon *empty = NULL;
+	HumanB gobble("blob");
+	gobble.setWeapon(empty);
+	gobble.attack();
+
+	Weapon bat("big");
+	empty = &bat;
+	gobble.setWeapon(empty);
+	gobble.attack();
 }

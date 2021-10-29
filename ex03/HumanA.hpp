@@ -6,7 +6,7 @@
 /*   By: nschat <nschat@student.codam.nl>             +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2021/10/29 13:20:00 by nschat        #+#    #+#                 */
-/*   Updated: 2021/10/29 13:37:03 by nschat        ########   odam.nl         */
+/*   Updated: 2021/10/29 15:25:16 by nschat        ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 
 class HumanA {
 	public:
-		HumanA(std::string name, Weapon weapon);
+		HumanA(std::string name, Weapon &weapon);
 		~HumanA();
 		void attack();
 
