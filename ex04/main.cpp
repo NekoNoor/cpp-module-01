@@ -6,7 +6,7 @@
 /*   By: nschat <nschat@student.codam.nl>             +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2021/11/01 13:22:51 by nschat        #+#    #+#                 */
-/*   Updated: 2021/11/01 13:38:51 by nschat        ########   odam.nl         */
+/*   Updated: 2021/11/01 14:16:05 by nschat        ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,10 +25,27 @@ int	main(int ac, char **av) {
 		std::cout << "Error: empty arguments provided" << std::endl;
 		return (2);
 	}
-	std::ifstream file(filename);
-	if (file.is_open() == 0) {
-		std::cout << "Error: failed to open file" << std::endl;
+	std::ifstream infile(filename);
+	std::string content;
+	if (infile.is_open()) {
+		content.assign((std::istreambuf_iterator<char>(infile)), (std::istreambuf_iterator<char>()));
+	} else {
+		std::cout << "Error: failed to input open file" << std::endl;
 		return (3);
+	}
+	std::ofstream outfile(filename.append(".replace"));
+	if (outfile.is_open()) {
+		size_t pos = 0;
+		while (true) {
+			pos = content.find(find, pos);
+			if (pos == std::string::npos)
+				break;
+			content.replace(pos, find.length(), replace);
+		}
+		outfile << content;
+	} else {
+		std::cout << "Error: failed to open output file" << std::endl;
+		return (4);
 	}
 	return (0);
 }
