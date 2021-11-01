@@ -6,7 +6,7 @@
 /*   By: nschat <nschat@student.codam.nl>             +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2021/11/01 13:22:51 by nschat        #+#    #+#                 */
-/*   Updated: 2021/11/01 15:57:25 by nschat        ########   odam.nl         */
+/*   Updated: 2021/11/01 17:31:25 by nschat        ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,7 +50,6 @@ int	main(int ac, char **av) {
 				outfile << content.substr(i);
 			}
 		}
-		outfile << std::endl;
 	} else {
 		std::cout << "Error: failed to open output file" << std::endl;
 		return (4);
