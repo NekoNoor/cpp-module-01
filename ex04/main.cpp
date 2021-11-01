@@ -6,7 +6,7 @@
 /*   By: nschat <nschat@student.codam.nl>             +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2021/11/01 13:22:51 by nschat        #+#    #+#                 */
-/*   Updated: 2021/11/01 14:16:05 by nschat        ########   odam.nl         */
+/*   Updated: 2021/11/01 14:19:52 by nschat        ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,11 +36,10 @@ int	main(int ac, char **av) {
 	std::ofstream outfile(filename.append(".replace"));
 	if (outfile.is_open()) {
 		size_t pos = 0;
-		while (true) {
+		while (pos != std::string::npos) {
 			pos = content.find(find, pos);
-			if (pos == std::string::npos)
-				break;
-			content.replace(pos, find.length(), replace);
+			if (pos != std::string::npos)
+				content.replace(pos, find.length(), replace);
 		}
 		outfile << content;
 	} else {
