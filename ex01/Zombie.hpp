@@ -6,7 +6,7 @@
 /*   By: nschat <nschat@student.codam.nl>             +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2021/10/18 13:11:49 by nschat        #+#    #+#                 */
-/*   Updated: 2021/10/29 13:27:10 by nschat        ########   odam.nl         */
+/*   Updated: 2021/11/01 13:37:15 by nschat        ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,7 @@
 # define ZOMBIE_HPP
 # include <iostream>
 
-class Zombie
-{
+class Zombie {
 	public:
 		Zombie();
 		Zombie(std::string name);

@@ -6,14 +6,13 @@
 /*   By: nschat <nschat@student.codam.nl>             +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2021/10/18 11:58:04 by nschat        #+#    #+#                 */
-/*   Updated: 2021/10/28 16:22:00 by nschat        ########   odam.nl         */
+/*   Updated: 2021/11/01 13:37:15 by nschat        ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Zombie.hpp"
 
-int	main(void)
-{
+int	main(void) {
 	int n = 12;
 	Zombie *horde;
 

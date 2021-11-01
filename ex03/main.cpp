@@ -6,7 +6,7 @@
 /*   By: nschat <nschat@student.codam.nl>             +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2021/10/29 13:17:59 by nschat        #+#    #+#                 */
-/*   Updated: 2021/10/29 15:33:13 by nschat        ########   odam.nl         */
+/*   Updated: 2021/11/01 13:38:44 by nschat        ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,7 @@
 #include "HumanB.hpp"
 #include "Weapon.hpp"
 
-int	main(void)
-{
+int	main(void) {
 	Weapon knoife("sharp");
 	HumanA snobble("boba", knoife);
 	snobble.attack();
