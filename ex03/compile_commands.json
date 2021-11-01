@@ -14,5 +14,53 @@
    "main.o"
   ],
   "file": "main.cpp"
+ },
+ {
+  "directory": "/Users/nschat/Projects/cpp-modules/cpp-module-01/ex03",
+  "arguments": [
+   "clang++",
+   "-Wall",
+   "-Wextra",
+   "-Werror",
+   "-std=c++98",
+   "-pedantic",
+   "-c",
+   "Weapon.cpp",
+   "-o",
+   "Weapon.o"
+  ],
+  "file": "Weapon.cpp"
+ },
+ {
+  "directory": "/Users/nschat/Projects/cpp-modules/cpp-module-01/ex03",
+  "arguments": [
+   "clang++",
+   "-Wall",
+   "-Wextra",
+   "-Werror",
+   "-std=c++98",
+   "-pedantic",
+   "-c",
+   "HumanA.cpp",
+   "-o",
+   "HumanA.o"
+  ],
+  "file": "HumanA.cpp"
+ },
+ {
+  "directory": "/Users/nschat/Projects/cpp-modules/cpp-module-01/ex03",
+  "arguments": [
+   "clang++",
+   "-Wall",
+   "-Wextra",
+   "-Werror",
+   "-std=c++98",
+   "-pedantic",
+   "-c",
+   "HumanB.cpp",
+   "-o",
+   "HumanB.o"
+  ],
+  "file": "HumanB.cpp"
  }
 ]

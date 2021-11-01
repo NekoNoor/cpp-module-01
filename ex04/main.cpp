@@ -6,7 +6,7 @@
 /*   By: nschat <nschat@student.codam.nl>             +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2021/11/01 13:22:51 by nschat        #+#    #+#                 */
-/*   Updated: 2021/11/01 15:37:11 by nschat        ########   odam.nl         */
+/*   Updated: 2021/11/01 15:54:45 by nschat        ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,11 +41,14 @@ int	main(int ac, char **av) {
 		while (pos != std::string::npos) {
 			pos = content.find(find, pos);
 			len = pos - i;
+			std::cout << "pos = " << pos << ", i = " << i << ", len = " << len << std::endl;
 			if (pos != std::string::npos) {
 				outfile << content.substr(i, len);
 				outfile << replace;
 				pos += find.length();
 				i = pos;
+			} else {
+				outfile << content.substr(i);
 			}
 		}
 		outfile << std::endl;
