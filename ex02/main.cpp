@@ -6,13 +6,13 @@
 /*   By: nschat <nschat@student.codam.nl>             +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2021/10/29 13:02:01 by nschat        #+#    #+#                 */
-/*   Updated: 2021/11/01 13:37:16 by nschat        ########   odam.nl         */
+/*   Updated: 2021/11/08 17:43:04 by nschat        ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <iostream>
 
-int	main(void) {
+int main(void) {
 	std::string brain = "HI THIS IS BRAIN";
 	std::string *stringPTR = &brain;
 	std::string &stringREF = brain;

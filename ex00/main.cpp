@@ -6,24 +6,24 @@
 /*   By: nschat <nschat@student.codam.nl>             +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2021/10/18 11:58:04 by nschat        #+#    #+#                 */
-/*   Updated: 2021/11/01 13:37:15 by nschat        ########   odam.nl         */
+/*   Updated: 2021/11/08 17:43:03 by nschat        ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Zombie.hpp"
 
-int	main(void) {
+int main(void) {
 	{
-		Zombie bonk = Zombie("bonk");
+		Zombie bonk("bonk");
 		bonk.announce();
 	}
 	{
-		Zombie *bob = Zombie::newZombie("bob");
+		Zombie *bob = newZombie("bob");
 		bob->announce();
 		delete bob;
 	}
 	{
-		Zombie::randomChump("greg");
+		randomChump("greg");
 	}
 	return (0);
 }
