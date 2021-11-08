@@ -6,14 +6,15 @@
 #    By: nschat <nschat@student.codam.nl>             +#+                      #
 #                                                    +#+                       #
 #    Created: 2021/01/13 21:15:00 by nschat        #+#    #+#                  #
-#    Updated: 2021/11/08 14:15:12 by nschat        ########   odam.nl          #
+#    Updated: 2021/11/08 16:14:56 by nschat        ########   odam.nl          #
 #                                                                              #
 # **************************************************************************** #
 
 CC = clang++
 CXXFLAGS = -Wall -Wextra -Werror -std=c++98 -pedantic
 
-SRC = main.cpp Karen.cpp
+SRC = main.cpp \
+	  Karen.cpp
 
 OBJ = $(SRC:.cpp=.o)
 
