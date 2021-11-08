@@ -6,7 +6,7 @@
 #    By: nschat <nschat@student.codam.nl>             +#+                      #
 #                                                    +#+                       #
 #    Created: 2021/01/13 21:15:00 by nschat        #+#    #+#                  #
-#    Updated: 2021/10/29 13:33:23 by nschat        ########   odam.nl          #
+#    Updated: 2021/11/08 16:16:11 by nschat        ########   odam.nl          #
 #                                                                              #
 # **************************************************************************** #
 
@@ -20,7 +20,7 @@ SRC = main.cpp \
 
 OBJ = $(SRC:.cpp=.o)
 
-NAME = Unnemessary_violence
+NAME = Unnecessary_violence
 
 all: $(NAME)
 
