@@ -6,7 +6,7 @@
 /*   By: nschat <nschat@student.codam.nl>             +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2021/11/01 13:22:51 by nschat        #+#    #+#                 */
-/*   Updated: 2021/11/01 17:31:25 by nschat        ########   odam.nl         */
+/*   Updated: 2021/11/12 18:06:15 by nschat        ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,7 @@ int	main(int ac, char **av) {
 		std::cout << "Error: invalid number of arguments" << std::endl;
 		return (1);
 	}
+
 	std::string filename(av[1]);
 	std::string find(av[2]);
 	std::string replace(av[3]);
@@ -25,6 +26,7 @@ int	main(int ac, char **av) {
 		std::cout << "Error: empty arguments provided" << std::endl;
 		return (2);
 	}
+
 	std::ifstream infile(filename);
 	std::string content;
 	if (infile.is_open()) {
@@ -33,26 +35,25 @@ int	main(int ac, char **av) {
 		std::cout << "Error: failed to input open file" << std::endl;
 		return (3);
 	}
+	infile.close();
+
 	std::ofstream outfile(filename.append(".replace"));
 	if (outfile.is_open()) {
-		size_t i = 0;
 		size_t pos = 0;
-		size_t len = 0;
 		while (pos != std::string::npos) {
 			pos = content.find(find, pos);
-			len = pos - i;
 			if (pos != std::string::npos) {
-				outfile << content.substr(i, len);
-				outfile << replace;
-				pos += find.length();
-				i = pos;
+				content.erase(pos, find.length());
+				content.insert(pos, replace);
 			} else {
-				outfile << content.substr(i);
+				outfile << content;
 			}
 		}
 	} else {
 		std::cout << "Error: failed to open output file" << std::endl;
 		return (4);
 	}
+	outfile.close();
+
 	return (0);
 }

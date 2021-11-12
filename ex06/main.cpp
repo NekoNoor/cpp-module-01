@@ -6,7 +6,7 @@
 /*   By: nschat <nschat@student.codam.nl>             +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2021/11/02 10:40:31 by nschat        #+#    #+#                 */
-/*   Updated: 2021/11/12 15:59:27 by nschat        ########   odam.nl         */
+/*   Updated: 2021/11/12 18:09:14 by nschat        ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,7 +36,7 @@ int	main(int ac, char **av) {
 	Karen annoying = Karen();
 	std::string str(av[1]);
 	switch (log_level_int(av[1])) {
-		case (-1):
+		default:
 			std::cout << "[ Probably complaining about insignificant problems ]" << std::endl;
 			break;
 		case (0):

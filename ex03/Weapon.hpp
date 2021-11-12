@@ -6,7 +6,7 @@
 /*   By: nschat <nschat@student.codam.nl>             +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2021/10/29 13:18:37 by nschat        #+#    #+#                 */
-/*   Updated: 2021/11/12 15:59:27 by nschat        ########   odam.nl         */
+/*   Updated: 2021/11/12 17:57:25 by nschat        ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ class Weapon {
 		Weapon(std::string type);
 		~Weapon();
 		void setType(std::string type);
-		std::string getType();
+		const std::string &getType();
 
 	private:
 		std::string _type;

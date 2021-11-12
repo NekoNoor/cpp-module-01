@@ -6,7 +6,7 @@
 /*   By: nschat <nschat@student.codam.nl>             +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2021/10/18 11:58:04 by nschat        #+#    #+#                 */
-/*   Updated: 2021/11/08 17:43:03 by nschat        ########   odam.nl         */
+/*   Updated: 2021/11/12 17:56:25 by nschat        ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,9 +17,9 @@ int main(void) {
 	Zombie *horde;
 
 	horde = zombieHorde(n, "mob mob m-m-m-mob");
-	for (int i = 0; i < n; i++)
-	{
+	for (int i = 0; i < n; i++) {
 		horde[i].announce();
 	}
+	delete[] horde;
 	return (0);
 }
