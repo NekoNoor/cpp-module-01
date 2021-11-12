@@ -6,7 +6,7 @@
 /*   By: nschat <nschat@student.codam.nl>             +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2021/11/02 10:40:31 by nschat        #+#    #+#                 */
-/*   Updated: 2021/11/08 16:09:51 by nschat        ########   odam.nl         */
+/*   Updated: 2021/11/12 15:59:27 by nschat        ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,16 +21,14 @@ static const std::string g_log_levels[] = {
 };
 
 static int log_level_int(std::string input) {
-	for (int i = 0; i < 4; i++)
-	{
+	for (int i = 0; i < 4; i++) {
 		if (input.compare(g_log_levels[i]) == 0)
 			return (i);
 	}
 	return (-1);
 }
 
-int	main(int ac, char **av)
-{
+int	main(int ac, char **av) {
 	if (ac != 2) {
 		std::cout << "[ Probably complaining about insignificant problems ]" << std::endl;
 		return (1);
