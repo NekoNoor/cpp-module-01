@@ -6,7 +6,7 @@
 /*   By: nschat <nschat@student.codam.nl>             +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2021/11/01 13:22:51 by nschat        #+#    #+#                 */
-/*   Updated: 2021/11/12 18:06:15 by nschat        ########   odam.nl         */
+/*   Updated: 2021/11/16 15:22:04 by nschat        ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,7 @@ int	main(int ac, char **av) {
 	if (infile.is_open()) {
 		content.assign((std::istreambuf_iterator<char>(infile)), (std::istreambuf_iterator<char>()));
 	} else {
-		std::cout << "Error: failed to input open file" << std::endl;
+		std::cout << "Error: failed to open input file" << std::endl;
 		return (3);
 	}
 	infile.close();
